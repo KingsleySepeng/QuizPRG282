@@ -16,5 +16,17 @@ namespace WPFActivity
         {
             InitializeComponent();
         }
+        DataHandler fh = new DataHandler();
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btReadFile_Click(object sender, EventArgs e)
+        {
+            string s = fh.readFile();
+            LbList.Text = s;
+
+        }
     }
 }
